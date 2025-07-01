@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Talent - AGENT Az</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { display: flex; flex-direction: column; min-height: 100vh; }
+        .page-header { background-color: rgba(18, 18, 18, 0.85); backdrop-filter: blur(10px); padding: 1rem 5%; width: 100%; border-bottom: 1px solid #2a2a2a; }
+        .page-header .logo-container { text-align: center; margin: 0 auto; display: block; }
+        main { flex: 1; display: flex; align-items: center; justify-content: center; }
+        .choice-container { max-width: 900px; margin: 2rem auto; text-align: center; }
+        .choice-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem; }
+        .choice-card { background-color: var(--dark-bg-secondary); padding: 2.5rem; border-radius: 15px; text-align: center; }
+        .choice-card h3 { font-size: 1.8rem; color: var(--white); margin-bottom: 1rem; }
+        .choice-card p { font-size: 1rem; color: var(--light-text); margin-bottom: 2rem; min-height: 60px; }
+        .page-footer { padding: 2rem; color: var(--footer-text); font-size: 0.9rem; border-top: 1px solid #2a2a2a; text-align: center; }
+
+        @media (max-width: 768px) {
+            .choice-grid { grid-template-columns: 1fr; }
+            .choice-card p { min-height: unset; }
+        }
+    </style>
+</head>
+<body>
+    <header class="page-header">
+       <a href="index.html" class="logo-container">
+            <span style="font-size: 1.5rem; font-weight: 700; color: var(--light-text); vertical-align: middle;">𝒜𝒢𝐸𝒩𝒯 𝒜𝓏</span>
+        </a>
+    </header>
+
+    <main>
+         <div class="choice-container">
+            <h2 style="font-size: 2.5rem;">Find the Right Talent</h2>
+            <p class="subtitle" style="font-size: 1.2rem; max-width: 600px; margin: 1rem auto;">Ready to find the right talent? Let us know what kind of help you're looking for.</p>
+            <div class="choice-grid">
+                <div class="choice-card">
+                    <h3>Long-Term</h3>
+                    <p>Looking to hire a dedicated team member for a permanent or ongoing role?</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSffo7-Y7iFGbnOZIG1DCbAjqP_swS9YjmOJLeqjMlhCNKHJ3g/viewform?usp=header" target="_blank" class="cta-button">Post a Job</a>
+                </div>
+                <div class="choice-card">
+                    <h3>Short-Term</h3>
+                    <p>Need a skilled freelancer for a specific project, gig, or temporary task?</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf2oh_o4VZLJT9swqkoBCJT84AfsKQ-Nr7ZCjk9V6XtWPs9cw/viewform?usp=header" target="_blank" class="cta-button">Post a Project</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <p>&copy; 2025 𝒜𝒢𝐸𝒩𝒯 𝒜𝓏. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
